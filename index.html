@@ -12,9 +12,10 @@
 </head>
 <body>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="public/css/custom.css" rel="stylesheet">
 <div class="container">
 <div class="row flex-lg-nowrap">
-  <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+  <!-- <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
     <div class="card p-3">
       <div class="e-navlist e-navlist--active-bg">
         <ul class="nav">
@@ -24,12 +25,12 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="col">
     <div class="e-tabs mb-3 px-3">
       <ul class="nav nav-tabs">
-        <li class="nav-item"><a class="nav-link active" href="#">Users</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Top Players</a></li>
       </ul>
     </div>
 
@@ -38,7 +39,7 @@
         <div class="e-panel card">
           <div class="card-body">
             <div class="card-title">
-              <h6 class="mr-2"><span>Users</span><small class="px-1">Be a wise leader</small></h6>
+              <h6 class="mr-2"><span>Players</span><small class="px-1">List Top Players</small></h6>
             </div>
             <div class="e-table">
               <div class="table-responsive table-lg mt-3">
@@ -53,9 +54,15 @@
                       </th>
                       <th>Photo</th>
                       <th class="max-width">Name</th>
+                      <th class="sortable">e-mail</th>
+                      <th class="sortable">Phone</th>
+                      <th class="sortable">Instagram</th>
+                      <th class="max-width">Student ID</th>
+                      <th class="sortable">GPA</th>
                       <th class="sortable">Date</th>
-                      <th> </th>
-                      <th>Actions</th>
+                      <th class="sortable">Best time</th>
+                      <!-- <th> </th> -->
+                      <!-- <th>Actions</th> -->
                     </tr>
                   </thead>
                   <tbody>
@@ -67,238 +74,129 @@
                         </div>
                       </td>
                       <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
+                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><img class="photo" src="public/images/1.jpg"></div>
                       </td>
-                      <td class="text-nowrap align-middle">Adam Cotter</td>
-                      <td class="text-nowrap align-middle"><span>09 Dec 2017</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
+                      <td class="text-nowrap align-middle">Li Hui</td>
+                      <td class="text-nowrap align-middle">lihui@connect.ust.hk</td>
+                      <td class="text-nowrap align-middle">54679876</td>
+                      <td class="text-nowrap align-middle"><a href=''>hui1990</a></td>
+                      <td class="text-nowrap align-middle">3045697</td>
+                      <td class="text-nowrap align-middle">3.8</td>
+                      <td class="text-nowrap align-middle"><span>01/03/2022</span></td>
+                      <td class="text-nowrap align-middle">1.02 min</td>
+                      <!-- <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td> -->
+                      <!-- <td class="text-center align-middle">
                         <div class="btn-group align-top">
                             <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
                             <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
                         </div>
-                      </td>
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="align-middle">
                         <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-2">
-                          <label class="custom-control-label" for="item-2"></label>
+                          <input type="checkbox" class="custom-control-input" id="item-1">
+                          <label class="custom-control-label" for="item-1"></label>
                         </div>
                       </td>
                       <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
+                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><img class="photo" src="public/images/2.jpg"></div>
                       </td>
-                      <td class="text-nowrap align-middle">Pauline Noble</td>
-                      <td class="text-nowrap align-middle"><span>26 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-off"></i></td>
-                      <td class="text-center align-middle">
+                      <td class="text-nowrap align-middle">Ji Lui</td>
+                      <td class="text-nowrap align-middle">jilui@connect.ust.hk</td>
+                      <td class="text-nowrap align-middle">3490345</td>
+                      <td class="text-nowrap align-middle"><a href=''>jiHK_32</a></td>
+                      <td class="text-nowrap align-middle">303978</td>
+                      <td class="text-nowrap align-middle">3.9</td>
+                      <td class="text-nowrap align-middle"><span>04/03/2022</span></td>
+                      <td class="text-nowrap align-middle">1.13 min</td>
+                      <!-- <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td> -->
+                      <!-- <td class="text-center align-middle">
                         <div class="btn-group align-top">
                             <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
                             <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
                         </div>
-                      </td>
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="align-middle">
                         <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-3">
-                          <label class="custom-control-label" for="item-3"></label>
+                          <input type="checkbox" class="custom-control-input" id="item-1">
+                          <label class="custom-control-label" for="item-1"></label>
                         </div>
                       </td>
                       <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
+                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><img class="photo" src="public/images/3.jpg"></div>
                       </td>
-                      <td class="text-nowrap align-middle">Sherilyn Metzel</td>
-                      <td class="text-nowrap align-middle"><span>27 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
+                      <td class="text-nowrap align-middle">Ju Wang</td>
+                      <td class="text-nowrap align-middle">juwang@connect.ust.hk</td>
+                      <td class="text-nowrap align-middle">65432201</td>
+                      <td class="text-nowrap align-middle"><a href=''>juhk123</a></td>
+                      <td class="text-nowrap align-middle">303465</td>
+                      <td class="text-nowrap align-middle">3.6</td>
+                      <td class="text-nowrap align-middle"><span>04/13/2022</span></td>
+                      <td class="text-nowrap align-middle">2.21 min</td>
+                      <!-- <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td> -->
+                      <!-- <td class="text-center align-middle">
                         <div class="btn-group align-top">
                             <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
                             <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
                         </div>
-                      </td>
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="align-middle">
                         <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-4">
-                          <label class="custom-control-label" for="item-4"></label>
+                          <input type="checkbox" class="custom-control-input" id="item-1">
+                          <label class="custom-control-label" for="item-1"></label>
                         </div>
                       </td>
                       <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
+                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><img class="photo" src="public/images/4.jpg"></div>
                       </td>
-                      <td class="text-nowrap align-middle">Terrie Boaler</td>
-                      <td class="text-nowrap align-middle"><span>20 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
+                      <td class="text-nowrap align-middle">Fen Chu</td>
+                      <td class="text-nowrap align-middle">fenchu@connect.ust.hk</td>
+                      <td class="text-nowrap align-middle">67896324</td>
+                      <td class="text-nowrap align-middle"><a href=''>fen_2002</a></td>
+                      <td class="text-nowrap align-middle">304578</td>
+                      <td class="text-nowrap align-middle">3.2</td>
+                      <td class="text-nowrap align-middle"><span>04/08/2022</span></td>
+                      <td class="text-nowrap align-middle">1.07 min</td>
+                      <!-- <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td> -->
+                      <!-- <td class="text-center align-middle">
                         <div class="btn-group align-top">
                             <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
                             <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
                         </div>
-                      </td>
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="align-middle">
                         <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-5">
-                          <label class="custom-control-label" for="item-5"></label>
+                          <input type="checkbox" class="custom-control-input" id="item-1">
+                          <label class="custom-control-label" for="item-1"></label>
                         </div>
                       </td>
                       <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
+                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><img class="photo" src="public/images/5.jpg"></div>
                       </td>
-                      <td class="text-nowrap align-middle">Rutter Pude</td>
-                      <td class="text-nowrap align-middle"><span>13 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-off"></i></td>
-                      <td class="text-center align-middle">
+                      <td class="text-nowrap align-middle">Hu Bolin</td>
+                      <td class="text-nowrap align-middle">hubolin@connect.ust.hk</td>
+                      <td class="text-nowrap align-middle">45670945</td>
+                      <td class="text-nowrap align-middle"><a href=''>jiHK_32</a></td>
+                      <td class="text-nowrap align-middle">303478</td>
+                      <td class="text-nowrap align-middle">3.4</td>
+                      <td class="text-nowrap align-middle"><span>04/05/2022</span></td>
+                      <td class="text-nowrap align-middle">2.03 min</td>
+                      <!-- <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td> -->
+                      <!-- <td class="text-center align-middle">
                         <div class="btn-group align-top">
                             <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
                             <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
                         </div>
-                      </td>
+                      </td> -->
                     </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-6">
-                          <label class="custom-control-label" for="item-6"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Clifford Benjamin</td>
-                      <td class="text-nowrap align-middle"><span>25 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-7">
-                          <label class="custom-control-label" for="item-7"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Thedric Romans</td>
-                      <td class="text-nowrap align-middle"><span>12 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-off"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-8">
-                          <label class="custom-control-label" for="item-8"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Haily Carthew</td>
-                      <td class="text-nowrap align-middle"><span>27 Jan 2018</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-9">
-                          <label class="custom-control-label" for="item-9"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Dorothea Joicey</td>
-                      <td class="text-nowrap align-middle"><span>12 Dec 2017</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-10">
-                          <label class="custom-control-label" for="item-10"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Mikaela Pinel</td>
-                      <td class="text-nowrap align-middle"><span>10 Dec 2017</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-off"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-11">
-                          <label class="custom-control-label" for="item-11"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Donnell Farries</td>
-                      <td class="text-nowrap align-middle"><span>03 Dec 2017</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                          <input type="checkbox" class="custom-control-input" id="item-12">
-                          <label class="custom-control-label" for="item-12"></label>
-                        </div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top" style="width: 35px; height: 35px; border-radius: 3px;"><i class="fa fa-fw fa-photo" style="opacity: 0.8;"></i></div>
-                      </td>
-                      <td class="text-nowrap align-middle">Letizia Puncher</td>
-                      <td class="text-nowrap align-middle"><span>09 Dec 2017</span></td>
-                      <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-off"></i></td>
-                      <td class="text-center align-middle">
-                        <div class="btn-group align-top">
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#user-form-modal">Edit</button>
-                            <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
-                        </div>
-                      </td>
-                    </tr>
+                    
                   </tbody>
                 </table>
               </div>
@@ -318,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 mb-3">
+      <!-- <div class="col-12 col-lg-3 mb-3">
         <div class="card">
           <div class="card-body">
             <div class="text-center px-xl-3">
@@ -370,7 +268,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- User Form Modal -->
     <div class="modal fade" role="dialog" tabindex="-1" id="user-form-modal">
